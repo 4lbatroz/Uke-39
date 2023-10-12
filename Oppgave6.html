@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lager 2 variabler en som teller poeng og en som spør brukeren om noe i int format
+        var poengsum = 0;
+        var sporsmal1 = parseInt(prompt("hva er 1+1?"));
+
+        // En if setning som sjekker hvis svaret var riktig og hvis det var legger det til en i poengsum og skriver ut.
+        if (sporsmal1 === 2){
+            poengsum++;
+            document.write("Riktig!<br>");
+        }else{
+            document.write("Feil!");
+        };
+
+        var sporsmal2 = prompt("kan du skrive hei?");
+
+        if (sporsmal2 == "hei"){
+            poengsum++;
+            document.write("Riktig!<br>");
+        }else{
+            document.write("Feil!");
+        };
+
+        var sporsmal3 = parseInt(prompt("Hva er 4+6?"));
+
+        if (sporsmal3 === 10){
+            poengsum++;
+            document.write("Riktig!<br>");
+        }else{
+            document.write("Feil!<br>");
+        };
+        document.write("Din poengsum er: " + poengsum)
+    </script>
+</body>
+</html>
